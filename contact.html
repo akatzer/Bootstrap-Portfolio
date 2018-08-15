@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Contact Me</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-    <body>
-        <!-- Top of the main Page-->      
-        <header>
-            <div class="header">
-                <div class="name">
-                    <h1>Austin Katzer</h1>
-                </div> 
-                <div class="header-right">
-                    <a href="index.html" id="about">About</a>
-                    <a href="portfolio.html" id="portfolio">Portfolio</a>
-                    <a href="#" id="contact">Contact</a>
-                </div>             
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Austin's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">Austin Katzer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>                 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
             </div>
-        </header>
-
-        <!-- Box in the page that contains the form for right now it just redirects to the home page eventually it can gather data-->
-        <div class="clearfix">          
-            <section id="about-me">
-                <h1 id="intro">Contact</h1>
+        </nav>
+    </header>
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>            
+            <div class="jumbotron col-md-6">       
+                <h1>Contact</h1>
                 <hr>
-                <div class="form">
-                    <form action="index.html">
-                        Name<br>
-                        <input type="text" name="name" value="John Smith" onfocus="this.value=''">
-                        <br>
-                        Email<br>
-                        <input type="email" name="email" value="example@gmail.com" onfocus="this.value=''">
-                        <br>
-                        Message<br>
-                        <textarea name"message" rows="15" onfocus="this.value=''">
-                        </textarea>
-                        <br>
-                        <input type="submit" id="button" onclick="alert('Thank you for your inquiry, I will be in contact with you soon!')">
-                    </form>
-                </div>                    
-            </section>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="15"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
         </div>
-        
-        
+    </div>
 
-        <div class="footer">
-            <p></p>
+    <footer>
+        <div class="contaner">
+            <span></span>
         </div>
-    </body>
+    </footer>
+</body>
 </html>

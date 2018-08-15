@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+.navbar-light .navbar-brand{
+    color: white;
+}
 .navbar-brand{
     color: white;
     background-color: #4aaaa5;

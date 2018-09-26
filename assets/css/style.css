@@ -112,23 +112,34 @@ h2 {
 #word-guess {
     border: 0px;
     padding: 0;
-    background-color: #ffffff
+    background-color: #ffffff;
+    float: left;
 }
 
 #iron-man {
     border: 0px;
     padding: 0;
-    background-color: #ffffff
+    background-color: #ffffff;
+    float: left;
 }
 
 #jack-daniels {
     border: 0px;
     padding: 0;
-    background-color: #ffffff
+    background-color: #ffffff;
+    float: left;
 }
 
 #gifTastic {
     border: 0px;
     padding: 0;
-    background-color: #ffffff
+    background-color: #ffffff;
+    float: left
+}
+
+#trainScheduler {
+    border: 0px;
+    padding: 0;
+    background-color: #ffffff;
+    float: left
 }
